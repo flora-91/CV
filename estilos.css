@@ -10,3 +10,7 @@
 html{
     font-family: var(--font-normal);
 }
+
+body{
+    background-color: var(--bg-back);
+}
