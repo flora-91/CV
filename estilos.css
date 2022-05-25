@@ -1,0 +1,12 @@
+:root{
+    /* Fuentes*/
+    --font-title: 'Roboto', sans-serif;
+    --font-normal: 'Roboto Serif', serif;
+    /* Colores */
+    --bg-back: rgb(150, 150, 150);
+    --bg-dark-back: rgb(16, 16, 16);
+}
+
+html{
+    font-family: var(--font-normal);
+}
