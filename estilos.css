@@ -6,11 +6,8 @@
     --bg-back: rgb(150, 150, 150);
     --bg-dark-back: rgb(16, 16, 16);
 }
-
-html{
-    font-family: var(--font-normal);
-}
-
 body{
+    font-family: var(--font-normal);
     background-color: var(--bg-back);
+    font-size: 16px;
 }
