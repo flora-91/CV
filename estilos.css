@@ -8,5 +8,6 @@
 }
 body{
     font-family: var(--font-normal);
+    background-color: var(--bg-back);
     font-size: 16px;
 }
