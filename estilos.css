@@ -16,7 +16,7 @@ header {
 }
 
 main {
-  min-height: calc(100vh - 10rem);
+  min-height: calc(100vh - 12rem);
 }
 
 footer {
@@ -39,4 +39,10 @@ footer {
 
 footer .social-links i{
 font-size: 3rem;
+}
+
+/* bootstrap overrride */
+
+.tab-pane iframe{
+    min-height:calc(100vh - 20rem);
 }
