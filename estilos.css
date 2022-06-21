@@ -1,13 +1,42 @@
-:root{
-    /* Fuentes*/
-    --font-title: 'Roboto', sans-serif;
-    --font-normal: 'Roboto Serif', serif;
-    /* Colores */
-    --bg-back: rgb(150, 150, 150);
-    --bg-dark-back: rgb(16, 16, 16);
+:root {
+  /* Fuentes*/
+  --font-title: "Roboto", sans-serif;
+  --font-normal: "Roboto Serif", serif;
+  /* Colores */
+  --bg-back: rgb(150, 150, 150);
+  --bg-dark-back: rgb(16, 16, 16);
 }
-body{
-    font-family: var(--font-normal);
-    background-color: var(--bg-back);
-    font-size: 16px;
+body {
+  font-family: var(--font-normal);
+  font-size: 16px;
+}
+header {
+  height: 6rem;
+  align-items: center;
+}
+
+main {
+  min-height: calc(100vh - 10rem);
+}
+
+footer {
+  height: 6rem;
+}
+.custom-nav-link {
+  margin: 0.2rem 0.5rem;
+  padding: 0.2rem 1rem;
+  border: solid red 2px;
+  border-radius: 2rem;
+  background-color: transparent;
+}
+
+.btn-descarga {
+  margin: 0.2rem 0.5rem;
+  padding: 0.2rem 1rem;
+  border-radius: 2rem;
+}
+
+
+footer .social-links i{
+font-size: 3rem;
 }

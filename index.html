@@ -22,79 +22,86 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="estilos.css" />
   </head>
   <body>
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link active"
-          id="home-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#home-tab-pane"
-          type="button"
-          role="tab"
-          aria-controls="home-tab-pane"
-          aria-selected="true"
+    <header class="container-xl d-flex justify-content-between p-3">
+      <ul class="nav" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="custom-nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="home-tab-pane"
+            aria-selected="true"
+          >
+            Home
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="custom-nav-link"
+            id="profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#profile-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="profile-tab-pane"
+            aria-selected="false"
+          >
+            Sobre Mi
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="custom-nav-link"
+            id="contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#contact-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="contact-tab-pane"
+            aria-selected="false"
+          >
+            Porfolio
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="custom-nav-link"
+            id="disabled-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#disabled-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="disabled-tab-pane"
+            aria-selected="false"
+          >
+            Contacto
+          </button>
+        </li>
+      </ul>
+      <button class="btn btn-danger btn-descarga">
+        <a class="nav-link" href="" download>Descarga mi CV</a>
+      </button>
+    </header>
+    <main class="container-xl">
+      <div class="tab-content" id="myTabContent">
+        <!-- Home inicio-->
+        <div
+          class="tab-pane fade show active"
+          id="home-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0"
         >
           Home
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="profile-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#profile-tab-pane"
-          type="button"
-          role="tab"
-          aria-controls="profile-tab-pane"
-          aria-selected="false"
-        >
-          Sobre Mi
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="contact-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#contact-tab-pane"
-          type="button"
-          role="tab"
-          aria-controls="contact-tab-pane"
-          aria-selected="false"
-        >
-          Porfolio
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          id="disabled-tab"
-          data-bs-toggle="tab"
-          data-bs-target="#disabled-tab-pane"
-          type="button"
-          role="tab"
-          aria-controls="disabled-tab-pane"
-          aria-selected="false"
-        >
-          Contacto
-        </button>
-      </li>
-    </ul>
-    <div class="tab-content" id="myTabContent">
-      <!-- Home inicio-->
-      <div
-        class="tab-pane fade show active"
-        id="home-tab-pane"
-        role="tabpanel"
-        aria-labelledby="home-tab"
-        tabindex="0"
-      >
-        Home
-      </div>
-      <!-- Home Final -->
-      <!-- Sobre mi inicio-->
+        </div>
+        <!-- Home Final -->
+        <!-- Sobre mi inicio-->
       <div
         class="tab-pane fade"
         id="profile-tab-pane"
@@ -106,8 +113,46 @@
     </div>
         Sobre Mi
       </div>
-      
-       
+        <!-- Sobre mi Final-->
+        <!--  Porfolio inicio-->
+        <div
+          class="tab-pane fade"
+          id="contact-tab-pane"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+          tabindex="0"
+        >
+          Porfolio
+        </div>
+        <!-- Porfolio Final-->
+        <!-- Contacto inicio-->
+        <div
+          class="tab-pane fade"
+          id="disabled-tab-pane"
+          role="tabpanel"
+          aria-labelledby="disabled-tab"
+          tabindex="0"
+        >
+          Contacto
+        </div>
+        <!-- Contacto v-->
+      </div>
+    </main>
+    <footer>
+      <div class="row">
+        <div
+          class="col-6 social-links justify-content-center align-content-center"
+        >
+          <div class="row">
+            <div class="col">
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="col">
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="contactinfo col-6"></div>
       <div class="git col-6 py-2">
         <a href="https://github.com/" target="_blank" title="Github">
             <i class="fab fa-github px-3" style="color: #E20000; font-size: 40px;"></i></a>
@@ -146,9 +191,7 @@
       >
         Contacto
       </div>
-      <!-- Contacto v-->
-    </div>
-
+    </footer>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
